@@ -4,15 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creating Promises</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet" />
     <style>
-      button {
-        height: 100px;
-        width: 100px;
-        background-color: transparent;
+      /* CSS */
+      .button-23 {
+        background-color: #ffffff;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #222222;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        padding: 13px 23px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+        user-select: none;
+        -webkit-user-select: none;
+        width: auto;
       }
+
+      .button-23:focus-visible {
+        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+        transition: box-shadow 0.2s;
+      }
+
+      .button-23:active {
+        background-color: #f7f7f7;
+        border-color: #000000;
+        transform: scale(0.96);
+      }
+
+      .button-23:disabled {
+        border-color: #dddddd;
+        color: #dddddd;
+        cursor: not-allowed;
+        opacity: 1;
+      }
+
       div {
-        width: 400px;
+        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,8 +65,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: grey;
       }
       h1 {
+        font-family: "Raleway", sans-serif;
         color: white;
       }
     </style>
@@ -35,8 +78,9 @@
     <div>
       <h1>Change Background Color</h1>
 
-      <button>Rainbow</button>
+      <button class="button-23">Rainbow</button>
     </div>
+
     <script src="app2.js"></script>
   </body>
 </html>

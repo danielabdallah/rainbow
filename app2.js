@@ -110,3 +110,4 @@ function rainbow() {delayedColorChange('red',1000)
 }
 
 document.querySelector('button').addEventListener('click',rainbow);
+
